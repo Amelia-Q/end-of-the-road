@@ -1,0 +1,353 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  line-height: 1.5;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  background-color: black;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  height: 75px;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-tickets {
+  color: #f38530;
+  border-bottom: 2px solid #f38530;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+.nav-icon {
+  margin-right: 15px;
+  margin-top: 25px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 15px;
+}
+
+.logo {
+  border: 0;
+  height: 6.875rem;
+  max-width: 100%;
+  justify-content: center;
+  top: 15px;
+}
+
+.announcements-image-full {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 75px;
+}
+
+.announcements-image-wide {
+  display: none;
+}
+
+.lower-body {
+  padding: 15px;
+}
+
+.site-sections-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.site-sections-images {
+  width: 50%;
+}
+
+.info {
+  padding-top: 40px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 0px;
+}
+
+.line-up {
+  padding-top: 40px;
+  padding-right: 0px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.tickets {
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 40px;
+  padding-left: 0px;
+}
+
+.gallery {
+  padding-top: 15px;
+  padding-right: 0px;
+  padding-bottom: 40px;
+  padding-left: 15px;
+}
+
+.video-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 1;
+  overflow-wrap: break-word;
+}
+
+h2 {
+  margin-top: 0px;
+}
+
+.more-videos {
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: right;
+}
+
+.more-videos > a {
+  color: #9c9b3b;
+}
+
+iframe {
+  display: block;
+  width: 100%;
+}
+
+.latest-news-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.more-news {
+  color: #9c9b3b;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: right;
+}
+
+.more-news > a {
+  color: #9c9b3b;
+}
+
+.news-image {
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.post-date {
+  color: #6f6f6f;
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  color: #9c9b3b;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.read-more > a {
+  color: #9c9b3b;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.footer-copyright,
+.footer-company {
+  font-size: 0.75rem;
+}
+
+.footer-nav-item {
+  list-style: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.025rem;
+}
+
+.nav-home {
+  color: #9c9b3b;
+}
+.nav-home:hover {
+  color: white;
+}
+
+.nav-privacy,
+.nav-tandcs,
+.nav-contact,
+.nav-take-part {
+  color: white;
+}
+.nav-privacy:hover,
+.nav-tandcs:hover,
+.nav-contact:hover,
+.nav-take-part:hover {
+  color: #9c9b3b;
+}
+
+@media screen and (min-width: 650px) {
+  header {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .announcements-container {
+    margin-bottom: -10px;
+    padding-bottom: -10px;
+  }
+  .announcements-image-full {
+    display: none;
+  }
+  .announcements-image-wide {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .lower-body-outer {
+    background-image: url(img/EOTR2022-web-bg.jpg);
+    background-attachment: fixed;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .lower-body {
+    background-color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: -50px;
+    padding-top: -10px;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+  .site-sections-container {
+    margin-top: 35px;
+  }
+  h1 {
+    font-size: 3.75rem;
+  }
+  .highlights-video {
+    position: relative;
+    padding-bottom: 56.25%;
+  }
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .news-sections-container {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .news-section {
+    width: 33%;
+  }
+  .news-image {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+  }
+  .announcements-container {
+    margin-right: 10px;
+  }
+  .artists-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .sale-container {
+    margin-left: 10px;
+  }
+  .footer-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .lower-body {
+    max-width: 62.5rem;
+    margin: auto;
+  }
+  .site-sections-container {
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .site-sections-images {
+    width: 20%;
+  }
+  .info {
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+  }
+  .line-up {
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+  }
+  .tickets {
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+  }
+  .gallery {
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+  }
+}/*# sourceMappingURL=styles.css.map */
